@@ -75,7 +75,7 @@ public class IODatos {
 		}
 		
 		p= new Persona(nombre,apellido,nip);
-		System.out.println(p);
+		System.out.println(p.mostrarDatos(50));
 		
 	}
 	

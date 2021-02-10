@@ -44,11 +44,26 @@ public class Persona {
 
 	public String mostrarDatos(int longitudLinea) {
 		
+		int tamnom, tamape, tamnip;
+		String puntos="";
+		String x = 	Integer.toString(nip);
+		
+		tamnom= nombre.length();
+		tamape= apellidos.length();
+		tamnip= x.length();
 		
 		
 		
+		for (int i = 0; i < longitudLinea-tamnom-tamape-tamnip; i++) {
+			
+			puntos+=".";
+			
+		}
 		
-		return null;
+		String datos=apellidos + "," + nombre + puntos + nip;
+		
+		return datos;
+		
 	}
 	
 	
